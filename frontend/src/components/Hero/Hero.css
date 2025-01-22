@@ -1,0 +1,89 @@
+/* Hero.css */
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 75vh; /* Full viewport height */
+  background-image: url("../../images/Hero.jpg"); /* Background image */
+  background-size: cover; /* Ensure image covers the entire section */
+  background-position: center center; /* Center the background image */
+}
+
+/* Dark overlay to make the text more readable */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.36); /* Darken background with a lighter opacity */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Tagline */
+.hero-tagline {
+  font-size: 3rem; /* Larger text for visibility */
+  font-weight: bold;
+  margin-bottom: 30px; /* Space between tagline and search box */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Add shadow for better visibility */
+  color: #ffffff; /* Dark gray for better readability on a light background */
+}
+
+/* Search Form */
+.hero-search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Make it take the full width */
+}
+
+/* Search Input */
+.hero-search-input {
+  width: 350px;
+  padding: 8px 15px;
+  border: 2px solid #ffffff; /* White border */
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.7); /* Light background for the input */
+  color: #333; /* Dark text for input */
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.hero-search-button {
+  padding: 10px 20px;
+  background-color: #f5a623; /* Light orange-yellow for contrast with cream background */
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.hero-search-button:hover {
+  background-color: #d4872f; /* Darken the button color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover effect */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+
+  .hero-tagline {
+    font-size: 2rem; /* Smaller text size for mobile */
+    margin-bottom: 20px; /* Adjust margin */
+  }
+
+  .hero-search-input {
+    width: 80%; /* Make search input responsive */
+  }
+
+  .hero-search-button {
+    width: 100%; /* Full-width button on mobile */
+    margin-top: 10px; /* Add margin for spacing */
+  }
+}

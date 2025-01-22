@@ -5,6 +5,7 @@ import Product from '../Product';
 import { listProducts } from '../../actions/productAction';
 import Loader from '../Loader';
 import Message from '../Message';
+import { Hero } from '../Hero/Hero';
 
 function HomeScreen() {
     const dispatch = useDispatch();
@@ -16,6 +17,7 @@ function HomeScreen() {
 
     return (
         <div>
+            <Hero/>
             <h1 className="text-center">Latest Products</h1>
 
             {loading ?(
