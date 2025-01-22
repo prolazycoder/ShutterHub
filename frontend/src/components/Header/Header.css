@@ -1,0 +1,40 @@
+/* Header.css */
+
+/* Navbar Styles */
+.custom-navbar {
+  height: 80px; /* Set the desired height */
+  background-color: white; /* Navbar background */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for separation */
+  z-index: 1030; /* Ensure it stays on top */
+}
+
+/* Center Navbar Content Vertically */
+.custom-navbar .navbar-brand {
+  font-weight: bold;
+  color: black;
+  line-height: 80px; /* Center-align vertically */
+}
+
+.custom-navbar .nav-link {
+  color: black;
+  line-height: 80px; /* Center-align vertically */
+}
+
+.custom-navbar .nav-link:hover {
+  color: #007bff; /* Add hover effect */
+}
+
+.custom-navbar .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar .dropdown-menu {
+  background-color: white;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Prevent content from overlapping the navbar */
+body {
+  padding-top: 80px; /* Match the navbar height */
+}
