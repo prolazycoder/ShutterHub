@@ -16,7 +16,7 @@ export function TrendingImages() {
 
     return (
         <div>
-            <h1 className="text-center">Latest Products</h1>
+            <h1 className="text-center">Trending Now</h1>
 
             {loading ?(
                 <Loader />

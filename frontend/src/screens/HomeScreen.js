@@ -1,11 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import { Hero, TrendingImages } from '../components/HomePage';
+import { Container } from 'react-bootstrap';
 
 export function HomeScreen() {
     return (
         <div>
             <Hero/>
-            <TrendingImages/>         
+            <Container>
+                <TrendingImages/> 
+            </Container>        
         </div>
     )
 }

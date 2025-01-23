@@ -18,7 +18,12 @@ export function Header() {
     <Navbar expand="lg" className="navbar fixed-top custom-navbar">
       <Container>
         <LinkContainer to="/">
-          <Navbar.Brand>ShutterHub</Navbar.Brand>
+          <Navbar.Brand>
+            <img className="custom-logo"
+              src = 'images/Logo.png' 
+              alt = 'ShutterHub'
+            />
+          </Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">

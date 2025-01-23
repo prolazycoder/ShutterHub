@@ -1,11 +1,16 @@
 /* Header.css */
 
 /* Navbar Styles */
+
 .custom-navbar {
   height: 80px; /* Set the desired height */
   background-color: white; /* Navbar background */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for separation */
   z-index: 1030; /* Ensure it stays on top */
+  padding: 0 !important;
+}
+.custom-navbar .container {
+  height: 100%;
 }
 
 /* Center Navbar Content Vertically */
@@ -13,6 +18,7 @@
   font-weight: bold;
   color: black;
   line-height: 80px; /* Center-align vertically */
+  height: 100%;
 }
 
 .custom-navbar .nav-link {
@@ -37,4 +43,19 @@
 /* Prevent content from overlapping the navbar */
 body {
   padding-top: 80px; /* Match the navbar height */
+}
+
+.custom-logo {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .custom-logo {
+    height: 8vh;
+    width: auto;
+    display: block;
+  }
 }

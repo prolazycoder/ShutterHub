@@ -3,10 +3,11 @@
 /* Hero Section */
 .hero {
   position: relative;
-  height: 80vh; /* Full viewport height */
+  height: 90vh; /* Full viewport height */
   background-image: url("../../../images/Hero.jpg"); /* Background image */
   background-size: cover; /* Ensure image covers the entire section */
   background-position: center center; /* Center the background image */
+  margin-bottom: 30px;
 }
 
 /* Dark overlay to make the text more readable */
@@ -22,13 +23,22 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-bottom: 5rem;
 }
 
 /* Tagline */
 .hero-tagline {
-  font-size: 3rem; /* Larger text for visibility */
   font-weight: bold;
   margin-bottom: 30px; /* Space between tagline and search box */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Add shadow for better visibility */
+  color: #ffffff; /* Dark gray for better readability on a light background */
+}
+
+.hero-desc {
+  display: block;
+  font-weight: lighter;
+  font-size: small;
+  margin-bottom: 20px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Add shadow for better visibility */
   color: #ffffff; /* Dark gray for better readability on a light background */
 }
@@ -36,7 +46,7 @@
 /* Search Form */
 .hero-search-form {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   width: 100%; /* Make it take the full width */
 }
@@ -44,7 +54,7 @@
 /* Search Input */
 .hero-search-input {
   width: 350px;
-  padding: 8px 15px;
+  padding: 10px 20px;
   border: 2px solid #ffffff; /* White border */
   border-radius: 5px 0 0 5px;
   outline: none;
@@ -75,17 +85,10 @@
   .hero {
     height: 60vh;
   }
-  .hero-tagline {
-    font-size: 2rem; /* Smaller text size for mobile */
-    margin-bottom: 20px; /* Adjust margin */
+
+  /* Search Form */
+  .hero-search-form {
+    width: 80%; /* Make it take the full width */
   }
 
-  .hero-search-input {
-    width: 80%; /* Make search input responsive */
-  }
-
-  .hero-search-button {
-    width: 100%; /* Full-width button on mobile */
-    margin-top: 10px; /* Add margin for spacing */
-  }
 }
