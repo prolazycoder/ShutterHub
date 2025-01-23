@@ -3,7 +3,7 @@
 /* Hero Section */
 .hero {
   position: relative;
-  height: 75vh; /* Full viewport height */
+  height: 80vh; /* Full viewport height */
   background-image: url("../../images/Hero.jpg"); /* Background image */
   background-size: cover; /* Ensure image covers the entire section */
   background-position: center center; /* Center the background image */
@@ -72,7 +72,9 @@
 
 /* Responsive Media Queries */
 @media (max-width: 768px) {
-
+  .hero {
+    height: 60vh;
+  }
   .hero-tagline {
     font-size: 2rem; /* Smaller text size for mobile */
     margin-bottom: 20px; /* Adjust margin */
