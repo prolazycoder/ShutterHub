@@ -86,9 +86,4 @@ Ensure you have the following installed on your system:
 - Implement a recommendation system for personalized photo suggestions.  
 - Optimize the performance for handling large photo galleries.  
 
-## License  
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.  
 
----
-
-Let me know if you'd like additional adjustments or more sections!
