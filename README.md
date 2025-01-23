@@ -1,7 +1,3 @@
-Here's the revised README file:  
-
----
-
 # ShutterHub  
 
 A user-friendly photo gallery website enabling users to upload, browse, and purchase high-quality photos.  
