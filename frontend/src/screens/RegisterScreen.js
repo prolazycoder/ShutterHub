@@ -1,16 +1,14 @@
 import React,
 {useState,useEffect} from 'react'
 import { Link } from 'react-router-dom'
-import Message from "../Message";
-import Loader from "../Loader";
+import Message from "../components/Message";
+import Loader from "../components/Loader";
 import { Row, Col, Form, Button, Card } from 'react-bootstrap'
 import { useDispatch, useSelector } from "react-redux";
-import { register } from '../../actions/userActions'
-import FormContainer from '../FormContainer'
+import { register } from '../actions/userActions'
+import FormContainer from '../components/FormContainer'
 
-
-
-function RegisterScreen({location,history}) {
+export function RegisterScreen({location,history}) {
     const [name,setName]=useState('')
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
@@ -90,4 +88,3 @@ function RegisterScreen({location,history}) {
     )
 }
 
-export default RegisterScreen

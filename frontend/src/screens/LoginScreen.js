@@ -1,14 +1,14 @@
 import React,{useState,useEffect} from "react";
 import { Link } from "react-router-dom";
 import { Row, Col, Image, ListGroup, Button, Card,Form } from "react-bootstrap";
-import Loader from '../Loader';
-import Message from '../Message';
+import Loader from '../components/Loader';
+import Message from '../components/Message';
 import { useDispatch, useSelector } from "react-redux";
-import { login } from "../../actions/userActions";
-import FormContainer from '../FormContainer'
+import { login } from "../actions/userActions";
+import FormContainer from '../components/FormContainer'
 
 
-function LoginScreen({location,history}) {
+export function LoginScreen({location,history}) {
 
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
@@ -67,4 +67,3 @@ function LoginScreen({location,history}) {
     )
 }
 
-export default LoginScreen

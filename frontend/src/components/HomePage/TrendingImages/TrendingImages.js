@@ -1,13 +1,12 @@
-import React, {useState,useEffect} from 'react';
-import { useDispatch,useSelector } from 'react-redux';
-import {Row,Col} from "react-bootstrap";
-import Product from '../Product';
-import { listProducts } from '../../actions/productAction';
-import Loader from '../Loader';
-import Message from '../Message';
-import { Hero } from '../Hero/Hero';
+import React, {useState, useEffect} from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import {Row, Col} from "react-bootstrap";
+import Product from '../../Product';
+import { listProducts } from '../../../actions/productAction';
+import Loader from '../../Loader';
+import Message from '../../Message';
 
-function HomeScreen() {
+export function TrendingImages() {
     const dispatch = useDispatch();
     const productList = useSelector((state)=>state.productList);
     const {error,loading,products} =productList
@@ -17,7 +16,6 @@ function HomeScreen() {
 
     return (
         <div>
-            <Hero/>
             <h1 className="text-center">Latest Products</h1>
 
             {loading ?(
@@ -43,4 +41,3 @@ function HomeScreen() {
     )
 }
 
-export default HomeScreen

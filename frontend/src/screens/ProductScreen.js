@@ -1,14 +1,14 @@
 import React,{useState,useEffect} from "react";
 import { Link } from "react-router-dom";
 import { Row, Col, Image, ListGroup, Button, Card,Form } from "react-bootstrap";
-import Rating from "../Rating";
-import Loader from '../Loader';
-import Message from '../Message';
+import Rating from "../components/Rating";
+import Loader from '../components/Loader';
+import Message from '../components/Message';
 import { useDispatch, useSelector } from "react-redux";
-import { listProductDetails } from "../../actions/productAction";
-import { productDetailsReducers } from "../../reducers/productReducers";
+import { listProductDetails } from "../actions/productAction";
+import { productDetailsReducers } from "../reducers/productReducers";
 
-function ProductScreen({ match,history }) {
+export function ProductScreen({ match,history }) {
 
   const [qty,setQty] = useState(1)
   const dispatch = useDispatch();
@@ -136,4 +136,3 @@ function ProductScreen({ match,history }) {
   );
 }
 
-export default ProductScreen;
