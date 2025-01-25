@@ -22,8 +22,12 @@
 }
 
 .custom-navbar .nav-link {
-  color: black;
-  line-height: 80px; /* Center-align vertically */
+  color: black !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .custom-navbar .nav-link:hover {
@@ -49,6 +53,14 @@ body {
   height: 100%;
   width: auto;
   display: block;
+}
+
+.caption {
+  display: block;
+}
+
+.fa-custom-icon{
+  color: transparent;
 }
 
 /* Responsive Media Queries */

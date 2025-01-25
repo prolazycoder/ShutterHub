@@ -1,11 +1,16 @@
 import React from "react";
-import "./Hero.css"; // Import styles for the Hero component
+import { useNavigate } from "react-router-dom";
+import "./Hero.css"; 
 
-export const Hero = () => {
+export function Hero () {
+  const navigate = useNavigate();
   const handleSearch = (e) => {
     e.preventDefault();
     const searchTerm = e.target.search.value.trim();
-    console.log("Search Term:", searchTerm);
+    if(searchTerm)
+    {
+      navigate(`query=${searchTerm}`); // Navigate to the search page with the query
+    }
   };
 
   return (
@@ -20,8 +25,8 @@ export const Hero = () => {
             className="hero-search-input"
             placeholder="Search all assets..."
           />
-          <button type="submit" className="hero-search-button">
-            <i class="fa fa-search"></i> 
+          <button className="hero-search-button">
+            <i className="fa fa-search"></i> 
           </button>
         </form>
       </div>
