@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hero, TrendingImages } from '../components/HomePage';
+import { AboutMe, FeatureList, Hero, TrendingImages } from '../components/HomePage';
 import { Container } from 'react-bootstrap';
 
 export function HomeScreen() {
@@ -7,7 +7,9 @@ export function HomeScreen() {
         <div>
             <Hero/>
             <Container>
-                <TrendingImages/> 
+                <TrendingImages/>
+                <FeatureList/> 
+                <AboutMe/>
             </Container>        
         </div>
     )
