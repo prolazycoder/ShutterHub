@@ -9,7 +9,7 @@ export function Hero () {
     const searchTerm = e.target.search.value.trim();
     if(searchTerm)
     {
-      navigate(`query=${searchTerm}`); // Navigate to the search page with the query
+      navigate(`/search?query=${searchTerm}`); // Navigate to the search page with the query
     }
   };
 
