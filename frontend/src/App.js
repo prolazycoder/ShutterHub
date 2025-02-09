@@ -23,7 +23,7 @@ function App() {
                   <Route path="/register" element={<RegisterScreen />} />
                   <Route path="/product/:id" element={<ProductScreen />} />
                   <Route path="/cart/:id?" element={<CartScreen />} />
-                  <Route path="/search/Query=:searchTerm" element={<SearchProductScreen />} />
+                  <Route path="/search" element={<SearchProductScreen />} />
                 </Routes>
               </Container>
             }
